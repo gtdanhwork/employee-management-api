@@ -1,0 +1,73 @@
+@import './variables';
+
+.employee-management {
+  .header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    h2 {
+      margin: 0;
+      color: #333;
+    }
+
+    .btn-add {
+      padding: 10px 15px;
+      background: $primary-color;
+      color: #fff;
+      text-decoration: none;
+      border-radius: $border-radius;
+      transition: opacity 0.2s;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .employee-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid $border-color;
+      text-align: left;
+    }
+
+    th {
+      background: #e9ecef;
+      font-weight: 600;
+    }
+
+    .btn-action {
+      padding: 6px 12px;
+      border: none;
+      border-radius: $border-radius;
+      cursor: pointer;
+      margin-right: 5px;
+      color: #fff;
+
+      &.btn-edit {
+        background: $warning-color;
+        color: #212529;
+      }
+
+      &.btn-delete {
+        background: $danger-color;
+      }
+
+      &:hover {
+        opacity: 0.85;
+      }
+    }
+
+    .no-data {
+      text-align: center;
+      color: #6c757d;
+    }
+  }
+}

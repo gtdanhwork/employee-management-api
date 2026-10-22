@@ -1,0 +1,66 @@
+@import './variables';
+
+.employee-form-container {
+  max-width: 600px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #495057;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $border-color;
+      border-radius: $border-radius;
+      font-size: 14px;
+      box-sizing: border-box;
+
+      &:focus {
+        border-color: $primary-color;
+        outline: none;
+      }
+
+      &:disabled {
+        background-color: #e9ecef;
+        cursor: not-allowed;
+      }
+    }
+
+    .error-msg {
+      color: $danger-color;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+  }
+
+  .btn-submit {
+    padding: 10px 20px;
+    background: $success-color;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: $border-radius;
+    font-size: 16px;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
